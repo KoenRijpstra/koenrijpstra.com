@@ -17,6 +17,8 @@
   "homepage": "https://github.com/KoenRijpstra/koenrijpstra.com",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-minify-html": "^1.0.3"
+    "gulp-minify-html": "^1.0.3",
+    "shipit": "^0.1.16",
+    "shipit-deploy": "^2.0.0"
   }
 }

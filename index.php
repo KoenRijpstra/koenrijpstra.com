@@ -1,3 +1,3 @@
 <?php
 
-echo "koenrijpstra.com";
+echo "koenrijpstra.com v1.0";

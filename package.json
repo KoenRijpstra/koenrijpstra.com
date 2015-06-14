@@ -1,0 +1,22 @@
+{
+  "name": "koenrijpstra.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KoenRijpstra/koenrijpstra.com"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KoenRijpstra/koenrijpstra.com/issues"
+  },
+  "homepage": "https://github.com/KoenRijpstra/koenrijpstra.com",
+  "devDependencies": {
+    "shipit-deploy": "^2.0.0"
+  }
+}

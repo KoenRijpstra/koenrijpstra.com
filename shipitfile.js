@@ -6,7 +6,7 @@ module.exports = function (shipit) {
             workspace: '/tmp/koenrijpstra.com',
             deployTo: '~/apps/main',
             repositoryUrl: 'https://github.com/KoenRijpstra/koenrijpstra.com.git',
-            ignores: ['.git', 'node_modules', '.idea'],
+            ignores: ['.git', 'node_modules'],
             rsync: ['--del'],
             keepReleases: 2,
             shallowClone: true
@@ -14,5 +14,10 @@ module.exports = function (shipit) {
         production: {
             servers: 'serverpilot@koenrijpstra.com'
         }
+    });
+
+    // Serverpilot configuration support - Symlink current <- public
+    shipit.on('published', function () {
+        shipit.remote('cd ' + shipit.config.deployTo + ' && ln -nfs current public')
     });
 };

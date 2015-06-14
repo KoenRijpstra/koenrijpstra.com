@@ -5,7 +5,7 @@ var gulp = require('gulp')
 // task
 gulp.task('minify-html', function () {
     gulp.src('./*.html') // path to your files
-        .pipe(minifyHtml())
+        .pipe(minifyHtml({collapseWhitespace: true}))
         .pipe(gulp.dest('.'));
 });
 
